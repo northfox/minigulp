@@ -1,0 +1,7 @@
+{
+  "directory": "lib",
+  "json": "bower.json",
+  "searchpath":[
+    "https://bower.herokuapp.com"
+  ]
+}

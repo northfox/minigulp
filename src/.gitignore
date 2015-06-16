@@ -1,0 +1,10 @@
+# common
+.*~
+*~
+*.swp
+.DS_Store
+.idea
+.secret
+
+# minigulp
+lib

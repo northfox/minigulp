@@ -1,0 +1,21 @@
+{
+  "name": "minigulp",
+  "main": "gulp-config.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/northfox/minigulp",
+  "authors": [
+    "northfox"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.5.0",
+    "jquery": "2"
+  }
+}

@@ -1,0 +1,56 @@
+@charset 'utf-8';
+
+//{
+    $base-color: #201f1d;
+    $sub-color: skyblue;
+    $high-color: tomato;
+
+    $base-bg-color: whitesmoke;
+    $sub-bg-color: royalblue;
+    $high-bg-color: gold;
+
+    $media-lg: "only screen and (min-width: 1200px)";
+    $media-md: "only screen and (min-width: 768px) and (max-width: 991px)";
+    $media-sm: "only screen and (min-width: 480px) and (max-width: 767px)";
+    $media-xs: "only screen and (max-width: 479px)";
+//}
+
+body {
+    padding: 1em;
+    font-family: Helvetica Neue, Helvetica, Verdana, Arial, Meiryo, sans-serif;
+    max-width: 1500px;
+    min-width: 645px;
+    color: $base-color;
+    background: $base-bg-color;
+    h3 {
+        border-bottom: 1px solid  gray;
+        box-shadow: 0 2px 0 -1px  whitesmoke;
+    }
+    *::selection {
+        background: darken($base-bg-color, 15%);
+    }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="button"],
+textarea,
+select {
+    outline:none;
+    &:focus {
+        box-shadow: inset 0 0 2px 1px $sub-color;
+    }
+}
+
+@media #{$media-lg} {
+    
+}
+@media #{$media-md} {
+    
+}
+@media #{$media-sm} {
+    
+}
+@media #{$media-xs} {
+    
+}

@@ -8,7 +8,6 @@ module.exports = function() {
             .pipe($.plumber({errorHandler: $.notify.onError('<%= error.message %>')}))
             .pipe($.imagemin(config.imagemin.options))
             .pipe(gulp.dest(minigulp.getPath('images', 'dest')))
-            .pipe($.size({title: 'imagemin'}))
             .pipe($.browser.reload({stream: true}));
     });
 }();

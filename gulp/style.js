@@ -18,7 +18,6 @@ module.exports = function() {
             .pipe($.if(minigulp.option.min, $.csscomb()))
             .pipe($.if(minigulp.option.min, $.cssmin()))
             .pipe(gulp.dest(minigulp.getPath('sass', 'dest')))
-            .pipe($.size({title: 'style'}))
             .pipe($.browser.reload({stream: true}));
     });
 }();

@@ -19,7 +19,6 @@ module.exports = function() {
         return gulp.src(path.js.from)
             .pipe($.plumber({errorHandler: $.notify.onError('<%= error.message %>')}))
             .pipe(gulp.dest(path.js.to))
-            .pipe($.size({title: 'copy:js'}))
             .pipe($.browser.reload({stream: true}));
     });
 }();

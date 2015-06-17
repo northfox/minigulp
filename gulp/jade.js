@@ -11,7 +11,6 @@ module.exports = function() {
                 pretty: true
             }))
             .pipe(gulp.dest(minigulp.getPath('jade', 'dest')))
-            .pipe($.size({title: 'jade'}))
             .pipe($.browser.reload({stream: true}));
     });
 }();

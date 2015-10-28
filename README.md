@@ -8,8 +8,9 @@ gulp environment for simple services
 
     npm install
     bower install
+    cd src && bower install # if you use default src
 
-### Begin to watching files
+### Begin to watch files
 
     gulp
 
